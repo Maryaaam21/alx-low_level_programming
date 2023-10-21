@@ -12,20 +12,11 @@
 int helper_function(int num, int i)
 
 {
-	if (i < num)
-	{
-		if (num % i == 0)
-	{
-		return (0);
-	}
-	else
-	{
-		return (helper_function(num, i * 1));
-	}else
-	{
-		return (1);
-	}
-	}
+	if (i == 1)
+	return (1);
+	if (num % i == 0 && i > 0)
+	return (0);
+	return (helper_function(num, i - 1));
 }
 
 /**
@@ -43,6 +34,6 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return (helper_function(n, 2));
+		return (helper_function(n, n - 1));
 	}
 }
