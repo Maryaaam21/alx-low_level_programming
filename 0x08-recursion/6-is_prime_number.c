@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * helper_function - to return 0 or 1 if prime no or not
@@ -20,8 +21,7 @@ int helper_function(int num, int i)
 	else
 	{
 		return (helper_function(num, i * 1));
-	}
-	else
+	}else
 	{
 		return (1);
 	}
