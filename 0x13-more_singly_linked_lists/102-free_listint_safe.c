@@ -24,7 +24,7 @@ if (diff > 0)
 
 {
 temp = (*h)->next;
-sh: 1: q: not found
+	free(*h);
 	*h = temp;
 	len++;
 }
