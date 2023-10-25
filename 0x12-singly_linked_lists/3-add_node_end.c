@@ -14,7 +14,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newestnode, *tmp;
 	unsigned int i, count = 0;
-	
+
 	newestnode = malloc(sizeof(list_t));
 	if (newestnode == NULL)
 		return (NULL);
