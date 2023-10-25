@@ -6,7 +6,7 @@
  * @num: the number being checked
  * @i: the possible prime factors
  * helper_function: the helper function
- * return: 0 if not prime, 1 if prime
+ * Return: 0 if not prime, 1 if prime
  */
 
 int helper_function(int num, int i)
