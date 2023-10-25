@@ -40,8 +40,7 @@ while (n < len2 && m < (len1 + n))
 	s[m++] = s2[o++];
 
 while (n >= len2 && m < (len1 + len2))
-	s[m++] = s2[o++];
-
-s[m] = NULL;
-	return (s);
+s[m++] = s2[o++];
+s[m] = '\0';
+return (s);
 }
